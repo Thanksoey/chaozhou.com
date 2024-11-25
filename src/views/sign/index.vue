@@ -87,14 +87,14 @@ onMounted(() => {
                                     fill="currentColor"></path>
                             </svg>
                         </span>
-                        <span>注册</span>
+                        <span>注册111</span>
                     </n-button>
                 </span>
             </div>
             <div class="formBx">
                 <template v-if="formToggle">
-                    <n-form name="login" ref="loginFormRef" :model="loginModel"
-                        :rules="rules.login" label-placement="left" label-width="auto" label-align="right">
+                    <n-form name="login" ref="loginFormRef" :model="loginModel" :rules="rules.login"
+                        label-placement="left" label-width="auto" label-align="right">
                         <h2>用户登录</h2>
                         <n-form-item path="username">
                             <n-input name="loginusername" clearable
@@ -159,9 +159,9 @@ onMounted(() => {
                         label-placement="left" label-width="auto" label-align="right">
                         <h2>新用户注册</h2>
                         <n-form-item path="username">
-                            <n-input :input-props="{ name: 'registerusername', autocomplete: 'off' }" clearable show-count
-                                :minlength="8" :maxlength="16" :loading="loading" v-model:value="registerModel.username"
-                                placeholder="请输入用户名" @keydown.enter.prevent
+                            <n-input :input-props="{ name: 'registerusername', autocomplete: 'off' }" clearable
+                                show-count :minlength="8" :maxlength="16" :loading="loading"
+                                v-model:value="registerModel.username" placeholder="请输入用户名" @keydown.enter.prevent
                                 @input="registerModel.username = useClearInputValue(registerModel.username)">
                                 <template #prefix>
                                     <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
