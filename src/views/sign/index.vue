@@ -87,7 +87,7 @@ onMounted(() => {
                                     fill="currentColor"></path>
                             </svg>
                         </span>
-                        <span>注册111</span>
+                        <span>注册</span>
                     </n-button>
                 </span>
             </div>
